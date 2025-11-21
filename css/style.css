@@ -1,1 +1,89 @@
 /* Denna fil skall innehålla din CSS kod */
+#wrapper {
+    display: grid;
+    height: 110vh;
+    width: 95vw;
+    grid-template-areas: 
+    "hd nav nav nav"
+    "ma ma ma ma"
+    "se se ar ar";
+    grid-template-columns: 1.7fr 1.3fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    gap: 10px;
+    background-color: black;
+    padding-bottom: 1%;
+}
+
+header {
+    grid-area: hd;
+    background-color: #7b8c78;
+    border-radius: 5%;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #7b8c78;   
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5%;
+}
+
+section {
+    grid-area: se;
+    background-color: #7b8c78;
+    border-radius: 5%;
+    overflow: hidden;
+    justify-content: left;
+}
+
+main {
+    grid-area: ma;
+    background-image: url(../img/natur2.avif);
+    background-size: cover;
+    border-radius: 5%;
+}
+
+article {
+    grid-area: ar;
+    background-color: #7b8c78;
+    border-radius: 5%;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+}
+
+.meny {
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 130%;
+    text-decoration: none;
+    color: #d9c8b0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.meny:hover {
+    color: white
+    /*gör så att det kommer ett streck senare*/
+}
+
+h1 {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #d9c8b0;
+}
+
+.natur {
+    height: 90%;
+    width: 70%;
+    padding: 1%;
+    border-radius: 15%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #d9c8b0;
+    margin-top: 10%;
+}

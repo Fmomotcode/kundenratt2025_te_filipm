@@ -1,14 +1,14 @@
 /* Denna fil skall innehålla din CSS kod */
 #wrapper {
     display: grid;
-    height: 110vh;
+    max-height: 110vh;
     width: 95vw;
     grid-template-areas: 
     "hd nav nav nav"
     "ma ma ma ma"
-    "se se ar ar";
+    "ca ca ca ca";
     grid-template-columns: 1.7fr 1.3fr 2fr 1fr;
-    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-rows: 1fr 3fr 0.5fr;
     gap: 10px;
     padding-bottom: 1%;
 }
@@ -26,68 +26,136 @@ nav {
     justify-content: space-evenly;
     border-radius: 5%;
 }
-
-section {
-    grid-area: se;
-    background-color: #7b8c78;
-    border-radius: 5%;
-    overflow: hidden;
-    justify-content: left;
+#card {
     display: grid;
+    grid-area: ca;
     grid-template-areas: 
-    "dd td";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2px;
+    "ar ar2 ar3"
+    "ar4 ar5 ar6";
+    grid-template-columns: repeat(3, 1);
+    grid-template-rows: auto;
+    gap: 10px;
+    border-radius: 5%;
+    padding-left: 5%;
 }
 
-#bilddel {
-    grid-area: dd;
-    padding: 2%;
-    background-color: #7b8c78;
+#ar1 {
+    display: grid;
+    grid-area: ar;
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    max-height: 90%;
+    max-width: 85%;
+    overflow: hidden;
+    border: 3px #7b8c78 solid;
 }
 
-#textdel {
-    grid-area: td;
-    background-color: #7b8c78;
-    padding-bottom: 2%;
+.produkt_bilder {
+    height: 60%;
+    width: 80%;
+    object-fit: cover;
+    margin-bottom: 20%;
+    border-radius: 20%;
+    filter: grayscale(0.6);
 }
+
 main {
     grid-area: ma;
-    background-image: url(../img/natur2.avif);
+    background-image: url(../img/nu2.avif);
+    filter: blur(0.2px);
     background-size: cover;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;    
+    min-height: 300px;
 }
 
-article {
-    grid-area: ar;
-    background-color: #7b8c78;
-    border-radius: 5%;
-    overflow: hidden;
-    display: flex;
-    justify-content: right;
+#ar2 {
     display: grid;
-    grid-template-areas: 
-    "bdel tdel";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2px;
+    grid-area: ar2;
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    max-height: 90%;
+    max-width: 80%;
+    overflow: hidden;
+    border: 3px #7b8c78 solid;
 }
 
-#bdel {
-    padding: 2%;
-    grid-area: bdel;
-    background-color: #7b8c78;
-    border-radius: 5%;
+#ar3 {
+    display: grid;
+    grid-area: ar3;
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: 
+    column;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    max-height: 90%;
+    max-width: 80%;
+    overflow: hidden;
+    border: 3px #7b8c78 solid;
 }
 
-#tdel {
-    grid-area: tdel;
-    background-color: #7b8c78;
+#ar4 {
+    display: grid;
+    grid-area: ar4;
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    max-height: 90%;
+    max-width: 80%;
+    overflow: hidden;
+    border: 3px #7b8c78 solid;
+}
+
+#ar5 {
+    display: grid;
+    grid-area: ar5;
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    max-height: 90%;
+    max-width: 80%;
+    overflow: hidden;
+    border: 3px #7b8c78 solid;
+}
+
+#ar6 {
+    display: grid;
+    grid-area: ar6;
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    max-height: 90%;
+    max-width: 80%;
+    overflow: hidden;
+    border: 3px #7b8c78 solid;
 }
 
 .meny {
@@ -123,14 +191,6 @@ h1 {
     padding: 5px 10px; 
 }
 
-.natur {
-    height: 80%;
-    width: 90%;
-    padding: 1%;
-    border-radius: 15%;
-    filter: grayscale(0.6);
-}
-
 h2 {
     text-align: center;
     font-size: 200%;
@@ -148,7 +208,7 @@ h2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: -1;  
 }
 
 p {

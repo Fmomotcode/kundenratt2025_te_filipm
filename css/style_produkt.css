@@ -62,14 +62,14 @@ nav {
     height: 60%;
     width: 80%;
     object-fit: cover;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
     border-radius: 20%;
     filter: grayscale(0.6);
 }
 
 main {
     grid-area: ma;
-    background-image: url(../img/nu2.avif);
+    background-image: url(../img/natur2.avif);
     filter: blur(0.2px);
     background-size: cover;
     border-radius: 5%;
@@ -91,10 +91,10 @@ main {
     text-align: left;
     gap: 10px;
     max-height: 90%;
-    max-width: 80%;
+    max-width: 83%;
     overflow: hidden;
     border: 3px #7b8c78 solid;
-    margin-left: 6%;
+    margin-left: 4%;
 }
 
 #ar3 {
@@ -103,8 +103,7 @@ main {
     background-color: white;
     border-radius: 10%;
     display: flex;
-    flex-direction: 
-    column;
+    flex-direction: column;
     align-items: center;
     text-align: left;
     gap: 10px;
@@ -141,10 +140,10 @@ main {
     text-align: left;
     gap: 10px;
     max-height: 90%;
-    max-width: 80%;
+    max-width: 83%;
     overflow: hidden;
     border: 3px #7b8c78 solid;
-    margin-left: 6%;
+    margin-left: 4%;
 }
 
 #ar6 {
@@ -235,6 +234,7 @@ button {
     border-radius: 25px;
     font-size: 1.1rem;
     transition: 0.3s;
+    margin-top: 0;
 }
 
 button:hover {
@@ -247,4 +247,10 @@ button:hover {
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+h3 {
+    color: #d9c8b0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 150%;
+    margin-top: -1%;
 }

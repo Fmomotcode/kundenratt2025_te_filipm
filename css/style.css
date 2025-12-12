@@ -1,22 +1,26 @@
 /* Denna fil skall innehålla din CSS kod */
 #wrapper {
     display: grid;
-    height: 110vh;
-    width: 95vw;
+    height: 130vh;
+    width: 97vw;
     grid-template-areas: 
     "hd nav nav nav"
     "ma ma ma ma"
     "se se ar ar";
     grid-template-columns: 1.7fr 1.3fr 2fr 1fr;
-    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-rows: 1fr 4fr 2fr;
     gap: 10px;
-    padding-bottom: 1%;
+    row-gap: 0%;
+    column-gap: 0%;
 }
 
 header {
     grid-area: hd;
     background-color: #7b8c78;
-    border-radius: 5%;
+    border-radius: 0%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav {
@@ -24,7 +28,10 @@ nav {
     background-color: #7b8c78;   
     display: flex;
     justify-content: space-evenly;
-    border-radius: 5%;
+    border-radius: 0%;
+    position: sticky;
+    top: 0; /* höjden på din header */
+    z-index: 10;
 }
 
 section {
@@ -39,6 +46,7 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2px;
+    margin-right: 1%;
 }
 
 #bilddel {
@@ -76,6 +84,7 @@ article {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2px;
+    margin-left: 1%;
 }
 
 #bdel {
@@ -166,15 +175,10 @@ h4 {
 }
 
 button {
-    background-color: #7b8c78;
-    border-radius: 15%;
-    color: #d9c8b0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 140%;
-    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: 0.3s;
 }
 
 button:hover {

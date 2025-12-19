@@ -1,0 +1,181 @@
+/* Denna fil skall innehålla din CSS kod */
+#wrapper {
+    display: grid;
+    height: auto;
+    max-height: 150vh;
+    width: 97vw;
+    grid-template-areas: 
+    "hd nav nav nav"
+    "ma ma ma ma"
+    "se se ar ar"
+    "ft ft ft ft";
+    grid-template-columns: 1.7fr 1.3fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 4fr 2fr;
+    gap: 10px;
+    row-gap: 0%;
+    column-gap: 0%;
+}
+
+header {
+    grid-area: hd;
+    background-color: #7b8c78;
+    border-radius: 0%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #7b8c78;   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0%;
+    position: sticky;
+    top: 0; 
+    z-index: 10;
+}
+
+section {
+    grid-area: se; 
+    background-color: #7b8c78; 
+    border-radius: 5%; 
+    display: flex; 
+    justify-content: center; 
+    margin-left: 1%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    min-height: 55vh;
+    text-align: left;
+    gap: 15px;
+}
+
+main {
+    grid-area: ma;
+    background-image: url(../img/natur2.avif);
+    background-size: cover;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 70vh;
+}
+
+article {
+    grid-area: ar; 
+    background-color: #7b8c78; 
+    border-radius: 5%; 
+    display: flex; 
+    justify-content: center; 
+    margin-left: 1%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    min-height: 55vh;
+    text-align: left;
+    gap: 15px;
+}
+
+footer {
+    grid-area: ft;
+    background-color: #7b8c78;
+    border-radius: 5%;
+    margin-top: 1%;
+}
+
+.meny {
+    display: inline-block;  
+    align-self: start;       
+    text-align: center;
+    margin-top: 0%;
+    font-size: 140%;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+.meny:hover {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    color: white;
+    background-color: #d9c8b0;
+}
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #d9c8b0;
+    margin-top: 9%;
+    border: 3px black solid;
+    border-radius: 15%;
+    margin-left: 3%;
+    padding: 5px 10px; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #d9c8b0;
+    margin-top: 10%;
+}
+#bakgrund {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(79, 75, 75);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+p {
+    padding-left: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 90%;
+    line-height: 130%;
+    margin-top: -5%;
+}
+
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+    margin-top: 4%;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    color: white;
+    background-color: #d9c8b0;
+}
+h3 {
+    color: #d9c8b0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 150%;
+    margin-top: -1%;
+    margin-left: 4%;
+}
+
+.om {
+    width: 100%;
+    height: 40%;      
+    object-fit: cover; 
+    border-radius: 20px;
+}

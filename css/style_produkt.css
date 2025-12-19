@@ -15,9 +15,13 @@
 header {
     grid-area: hd;
     background-color: #7b8c78;
+    border-radius: 0%;
     position: sticky;
     top: 0;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
 }
 
 nav {
@@ -252,4 +256,13 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 150%;
     margin-top: -1%;
+}
+
+#logga {
+    height: auto;     
+    width: 60%;      
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15%;
+    border: 3px black solid;
 }

@@ -21,6 +21,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
 }
 
 nav {
@@ -193,4 +196,13 @@ h3 {
     line-height: 150%;
     margin-top: -1%;
     margin-left: 4%;
+}
+
+#logga {
+    height: auto;     
+    width: 60%;     
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15%;
+    border: 3px black solid;
 }

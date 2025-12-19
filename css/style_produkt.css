@@ -25,8 +25,10 @@ nav {
     background-color: #7b8c78;   
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0%;
     position: sticky;
-    top: 0;
+    top: 0; 
     z-index: 10;
 }
 #card {
@@ -166,20 +168,19 @@ main {
     display: inline-block;  
     align-self: start;       
     text-align: center;
-    margin-top: 4%;
+    margin-top: 0%;
     font-size: 140%;
     text-decoration: none;
-    color: #d9c8b0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 3px solid black;
-    border-radius: 20%;
-    padding: 5px 10px; 
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: 0.3s;
 }
 .meny:hover {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
     color: white;
-    text-decoration: none;
     background-color: #d9c8b0;
-    /*gör så att det kommer ett streck senare*/
 }
 
 h1 {
@@ -234,7 +235,6 @@ button {
     border-radius: 25px;
     font-size: 1.1rem;
     transition: 0.3s;
-    margin-top: 0;
 }
 
 button:hover {
@@ -242,8 +242,7 @@ button:hover {
     transform: translateY(4px);
     color: white;
     background-color: #d9c8b0;
-  }
-
+}
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);

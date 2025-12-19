@@ -2,7 +2,7 @@
 #wrapper {
     display: grid;
     height: auto;
-    max-height: 150vh;
+    max-height: 170vh;
     width: 97vw;
     grid-template-areas: 
     "hd nav nav nav"
@@ -10,7 +10,7 @@
     "se se ar ar"
     "ft ft ft ft";
     grid-template-columns: 1.7fr 1.3fr 2fr 1fr;
-    grid-template-rows: 1fr 5fr 4fr 2fr;
+    grid-template-rows: 1fr 5fr auto 2fr;
     gap: 10px;
     row-gap: 0%;
     column-gap: 0%;
@@ -38,6 +38,7 @@ nav {
 }
 
 section {
+    margin-top: 2%;
     grid-area: se; 
     background-color: #7b8c78; 
     border-radius: 5%; 
@@ -47,7 +48,7 @@ section {
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    min-height: 55vh;
+    min-height: 100vh;
     text-align: left;
     gap: 15px;
 }
@@ -61,10 +62,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    max-height: 70vh;
+    max-height: 400px;
 }
 
 article {
+    margin-top: 2%;
     grid-area: ar; 
     background-color: #7b8c78; 
     border-radius: 5%; 
@@ -74,7 +76,7 @@ article {
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    min-height: 55vh;
+    min-height: 100vh;
     text-align: left;
     gap: 15px;
 }
@@ -82,8 +84,40 @@ article {
 footer {
     grid-area: ft;
     background-color: #7b8c78;
-    border-radius: 5%;
+    border-radius: 10px;
+    padding: 10px;
+    color: #d9c8b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
     margin-top: 1%;
+    justify-content: flex-start;
+}
+
+#kontakt-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+    gap: 10px;
+    margin-top: 0%;
+    margin-bottom: auto;
+}
+
+#kontakt-form input,
+#kontakt-form textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+#kontakt-form textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 .meny {
@@ -178,4 +212,14 @@ h3 {
     height: 40%;      
     object-fit: cover; 
     border-radius: 20px;
+    filter: grayscale(0.7);
+}
+
+.extrabilder {
+    width: 100%;
+    height: 30%;      
+    object-fit: cover; 
+    border-radius: 20px;
+    filter: grayscale(0.7);
+    margin-bottom: 2%;
 }

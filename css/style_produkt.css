@@ -1,8 +1,14 @@
 /* Denna fil skall innehålla din CSS kod */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #wrapper {
     display: grid;
     max-height: 130vh;
-    width: 97vw;
+    width: 99vw;
     grid-template-areas: 
     "hd nav nav nav"
     "ma ma ma ma"
@@ -41,7 +47,7 @@ nav {
     grid-template-areas: 
     "ar ar2 ar3"
     "ar4 ar5 ar6";
-    grid-template-columns: repeat(3, 1);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 10px;
     border-radius: 5%;
@@ -61,7 +67,7 @@ nav {
     max-height: 90%;
     max-width: 90%;
     overflow: hidden;
-    border: 3px #7b8c78 solid;
+    border: 3px black solid;
 }
 
 .produkt_bilder {
@@ -78,7 +84,6 @@ main {
     background-image: url(../img/natur2.avif);
     filter: blur(0.2px);
     background-size: cover;
-    border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,7 +104,7 @@ main {
     max-height: 90%;
     max-width: 83%;
     overflow: hidden;
-    border: 3px #7b8c78 solid;
+    border: 3px black solid;
     margin-left: 4%;
 }
 
@@ -116,7 +121,7 @@ main {
     max-height: 90%;
     max-width: 80%;
     overflow: hidden;
-    border: 3px #7b8c78 solid;
+    border: 3px black solid;
 }
 
 #ar4 {
@@ -132,7 +137,7 @@ main {
     max-height: 90%;
     max-width: 90%;
     overflow: hidden;
-    border: 3px #7b8c78 solid;
+    border: 3px black solid;
 }
 
 #ar5 {
@@ -148,7 +153,7 @@ main {
     max-height: 90%;
     max-width: 83%;
     overflow: hidden;
-    border: 3px #7b8c78 solid;
+    border: 3px black solid;
     margin-left: 4%;
 }
 
@@ -165,7 +170,7 @@ main {
     max-height: 90%;
     max-width: 80%;
     overflow: hidden;
-    border: 3px #7b8c78 solid;
+    border: 3px black solid;
 }
 
 .meny {
@@ -213,7 +218,7 @@ h2 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(79, 75, 75);
+    background-color: #7b8c78;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -225,7 +230,7 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 90%;
     line-height: 130%;
-    margin-top: -5%;
+    margin-top: 2%;
 }
 
 h4 {
@@ -252,10 +257,10 @@ button:hover {
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 h3 {
-    color: #d9c8b0;
+    color: #090036;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 150%;
-    margin-top: -1%;
+    margin-top: 1%;
 }
 
 #logga {
@@ -265,4 +270,30 @@ h3 {
     object-fit: contain;
     border-radius: 15%;
     border: 3px black solid;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    border: 2px black solid;
+}
+
+a:hover {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    color: white;
+    background-color: #d9c8b0;
+}
+
+#underrubrik {
+    color: #d9c8b0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 150%;
+    margin-top: 1%;
 }
